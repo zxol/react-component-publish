@@ -6,7 +6,7 @@ Features Webpack 4 and Babel 7.
 
 It will compile down to commonjs, and will require a peer dependancy of react, meaning it will use whatever version of react the host project is using. Hopefully this will minimize compatibility issues.
 
-[based on this tutorial.](https://medium.com/quick-code/publish-your-own-react-component-as-npm-package-under-5-minutes-8a47f0cb92b9)
+[Based on this tutorial](https://medium.com/quick-code/publish-your-own-react-component-as-npm-package-under-5-minutes-8a47f0cb92b9) by [codewithbernard](https://github.com/codewithbernard)
 
 ## To start
 
@@ -28,13 +28,13 @@ Edit `/srctest/app.js` to change the parent environment, pass in props, etc.
 
 ## To test your component in another project (locally), before publishing to npm:
 
-build this project:
+Build this project:
 
 ```
 npm run build
 ```
 
-in this project's root directory, type:
+In this project's root directory, type:
 
 ```
 npm link
@@ -70,7 +70,7 @@ Important things to set:
 }
 ```
 
-if you have a git repo for the project, include the details:
+If you have a git repo for the project, include the details:
 
 ```json
 "repository": {
@@ -79,7 +79,7 @@ if you have a git repo for the project, include the details:
   },
 ```
 
-then, in the root directory, type:
+Then, in the root directory, type:
 
 ```
 npm publish
@@ -93,4 +93,4 @@ There are two webpack configs.
 - One for building the published component `webpack.publish.js`
 - One for viewing the component in the dev server. `webpack.testServer.js`
 
-Note that they are seperate, so any additions you make will have to be mirrored in both files if you want to use the dev server. If anyone knows a better way to do this, please let me know.
+Note that they are separate, so any additions you make will have to be mirrored in both files, if you want to use the dev server. If anyone knows a better way to do this, please let me know.
