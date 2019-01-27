@@ -1,4 +1,4 @@
-#react-component-publish
+# react-component-publish
 
 A barebones boilerplate to quickly publish react components.
 
@@ -8,7 +8,7 @@ It will compile down to commonjs, and will require a peer dependancy of react, m
 
 [based on this tutorial.](https://medium.com/quick-code/publish-your-own-react-component-as-npm-package-under-5-minutes-8a47f0cb92b9)
 
-#To start
+## To start
 
 ```
 npm i
@@ -17,7 +17,7 @@ npm start
 
 Edit `src/index.js` (your component)
 
-#To view your component in isolation with a basic webpack dev server:
+## To view your component in isolation with a basic webpack dev server:
 type:
 
 ```
@@ -26,7 +26,7 @@ npm run dev
 
 Edit `/srctest/app.js` to change the parent environment, pass in props, etc.
 
-#To test your component in another project (locally), before publishing to npm:
+## To test your component in another project (locally), before publishing to npm:
 
 build this project:
 
@@ -56,7 +56,7 @@ import MyAwesomeComponent from 'my-awesome-component'
 
 If you're using a hot-reload system, you should be able to observe any changes you make to your component (as long as you build them)
 
-#To publish your component to npm
+## To publish your component to npm
 Update the package.json with correct information.
 Important things to set:
 
@@ -87,7 +87,7 @@ npm publish
 
 [npm docs on publishing packages](https://docs.npmjs.com/packages-and-modules/contributing-packages-to-the-registry)
 
-#A note on webpack configs and the dev server:
+## A note on webpack configs and the dev server:
 There are two webpack configs.
 
 - One for building the published component `webpack.publish.js`
