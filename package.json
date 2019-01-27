@@ -4,8 +4,9 @@
   "description": "A boilerplate for publishing your own react components",
   "main": "build/index.js",
   "scripts": {
-    "start": "webpack --watch",
-    "build": "webpack"
+    "start": "webpack --env publish --mode production --watch",
+    "build": "webpack --env publish --mode production",
+    "dev": "webpack-dev-server --env testServer --mode development --open"
   },
   "author": "zxol",
   "license": "ISC",
@@ -18,12 +19,14 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "react": "^16.7.0",
-    "webpack": "^4.29.0",
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.5",
-    "webpack-cli": "^3.2.1"
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14"
   }
 }
